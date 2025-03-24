@@ -1,9 +1,9 @@
 public abstract class Persona : Comparable
 {
-    private string nombre;
-    private Numero dni;
+    protected string nombre;
+    protected Numero dni;
 
-    public Persona(String nombre, Numero dni)
+    public Persona(string nombre, Numero dni)
     {
         this.nombre = nombre;
         this.dni = dni;
@@ -14,27 +14,30 @@ public abstract class Persona : Comparable
         return this.nombre;
     }
 
-    public Numero getDni()
+    public Numero getDNI()
     {
         return this.dni;
     }
 
-
-    // Implementamos la Interfaz Comparable
-    public bool sosIgual(Comparable comp)
+    // Implementación de Interfaz Comparable
+    // En Persona se asume que comp es de tipo Numero.
+    public virtual bool sosIgual(Comparable comp)
     {
-        return this.dni.sosIgual(((Persona)comp).dni); // me aseguro de que comp sea una Persona
+        return this.dni.sosIgual((Numero)comp);
     }
 
-    public bool sosMenor(Comparable comp)
+    public virtual bool sosMenor(Comparable comp)
     {
-        return this.dni.sosMenor(((Persona)comp).dni);
+        return this.dni.sosMenor((Numero)comp);
     }
 
-    public bool sosMayor(Comparable comp)
+    public virtual bool sosMayor(Comparable comp)
     {
-        return this.dni.sosMayor(((Persona)comp).dni);
+        return this.dni.sosMayor((Numero)comp);
     }
-    
 
+    public override string ToString()
+    {
+        return this.nombre + " - DNI: " + this.dni.ToString();
+    }
 }
