@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/lovi/Documents/Github/Metodologias_I/Practica_1/Practica_1.csproj": {}
+    "/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_1/Practica_1.csproj": {}
   },
   "projects": {
-    "/home/lovi/Documents/Github/Metodologias_I/Practica_1/Practica_1.csproj": {
+    "/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_1/Practica_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lovi/Documents/Github/Metodologias_I/Practica_1/Practica_1.csproj",
+        "projectUniqueName": "/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_1/Practica_1.csproj",
         "projectName": "Practica_1",
-        "projectPath": "/home/lovi/Documents/Github/Metodologias_I/Practica_1/Practica_1.csproj",
+        "projectPath": "/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_1/Practica_1.csproj",
         "packagesPath": "/home/lovi/.nuget/packages/",
-        "outputPath": "/home/lovi/Documents/Github/Metodologias_I/Practica_1/obj/",
+        "outputPath": "/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/lovi/.nuget/NuGet/NuGet.Config"

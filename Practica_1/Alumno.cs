@@ -21,41 +21,19 @@ public class Alumno : Persona
 
     public override bool sosIgual(Comparable comp)
     {
-        if(comp.GetType() == typeof(Numero))
-        {            
-            return this.legajo.sosIgual(comp); // return base.sosIgual(comp); Ejercicio 14
-        }
-        else
-        {
-            Alumno otroAlumno = (Alumno) comp;
-            return this.dni.sosIgual(otroAlumno.getLegajo()); // return this.dni.sosIgual(otroAlumno.getDNI());  
-        }
+        return this.legajo.sosIgual((Numero)comp);  
     }
 
     public override bool sosMenor(Comparable comp)
     {
-        if(comp.GetType() == typeof(Numero))
-        {
-            return this.legajo.sosMenor(comp);
-        }
-        else
-        {
-            Alumno otroAlumno = (Alumno) comp;
-            return this.dni.sosMenor(otroAlumno.getLegajo());
-        }
+        Alumno otroAlumno = (Alumno) comp;
+        return this.legajo.sosMenor(otroAlumno.getLegajo());        
     }
 
     public override bool sosMayor(Comparable comp)
     {
-        if(comp.GetType() == typeof(Numero))
-        {
-            return this.legajo.sosMayor(comp);
-        }
-        else
-        {
-            Alumno otroAlumno = (Alumno) comp;
-            return this.dni.sosMayor(otroAlumno.getLegajo());
-        }
+        Alumno otroAlumno = (Alumno) comp;
+        return this.legajo.sosMayor(otroAlumno.getLegajo());        
     }
 
     public override string ToString()

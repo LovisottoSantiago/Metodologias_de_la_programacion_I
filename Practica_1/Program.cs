@@ -104,16 +104,13 @@ class Program
         ¿Fue necesario decir explícitamente que Alumno tiene que implementar
         la interface Comparable? ¿Cuál fue el criterio por el cual se comparó a los alumnos? ¿Por qué?
 
-         Al principio intenté usarlo así pero no funcionó, me tiraba una excepción "Unhandled exception. 
-         System.InvalidCastException: Unable to cast object of type 'Numero' to type 'Alumno'."
-        Por lo que decidí dejar la clase Persona lo más genérica posible y implementar su propia versión (override) 
-        en Alumno. En esta implementación lo que se tiene en cuenta es el Tipo de parámetro, si es un Numero 
-        directamente se usa la implementación de la clase Persona, en caso contrario se asume que es un Alumno y 
-        se compara su DNI. La comparación la hice con "if(comp.GetType() == typeof(Numero))" e implementé todos los 
-        métodos que Persona hereda de la interfaz Comparable.
-         Luego en el ejercicio 15 elegí comparar por Legajo, por lo que este código cambió un poco, ya no exactamente
-        la misma logica que en la clase Persona (En Persona comparo por DNI), por lo que decidí dejarlo comentado 
-        para que se pueda ver en la corrección.
+         Al principio intenté usarlo sin sobreescribir la clase Alumno pero no funcionó, me tiraba una excepción 
+         "Unhandled exception. System.InvalidCastException: Unable to cast object of type 'Numero' to type 'Alumno'."
+        Noté que no tenía problemas al comparar si eran iguales (DNI) pero sí al intentar comparar si era mayor o menor.
+        Por lo que tuve que hacer un override en sosMayor, sosMenor, creando una instancia de Alumno como
+        comparable y usando eso para la lógica.
+        Sin embargo, en el ejercicio 15 tuve que sobreescribir sosIgual para decirle que se compare por legajo en vez
+        de DNI.
 
     Ejercicio 16
         Para reflexionar. Responda ¿Podría haber hecho esto mismo sin interfaces? ¿A qué costo?        
