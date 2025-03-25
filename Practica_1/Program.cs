@@ -118,7 +118,7 @@ class Program
          En este caso se podría haber reemplazado Numero con simplemente un entero y usar comparaciones con < o >. Sin
         embargo, considero que quedó armada una estructura súper modificable a futuro, lo cual no habría sido posible
         sin el uso de interfaces. Esto nos va a permitir seguir agregando cosas a la interfaz Número en el futuro 
-        por ejemplo, validaciones, formateos, etc.), el código queda mucho más legible y tener todo separado es 
+        por ejemplo, validaciones, formateos, etc. El código queda mucho más legible y tener todo separado es 
         bastante más prolijo. Lo que más me gustó de usar interfaces es su reutilización.
     */
 
