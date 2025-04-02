@@ -1,0 +1,15 @@
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/bin/Debug/net9.0/Practica_2
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/bin/Debug/net9.0/Practica_2.deps.json
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/bin/Debug/net9.0/Practica_2.runtimeconfig.json
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/bin/Debug/net9.0/Practica_2.dll
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/bin/Debug/net9.0/Practica_2.pdb
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.AssemblyInfoInputs.cache
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.AssemblyInfo.cs
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.csproj.CoreCompileInputs.cache
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.sourcelink.json
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.dll
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/refint/Practica_2.dll
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.pdb
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/Practica_2.genruntimeconfig.cache
+/home/lovi/Documents/Github/Metodologias_de_la_programacion_I/Practica_2/obj/Debug/net9.0/ref/Practica_2.dll
