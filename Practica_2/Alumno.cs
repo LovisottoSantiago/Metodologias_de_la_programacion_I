@@ -26,8 +26,7 @@ public class Alumno : Persona
     {
         this.estrategiaDeComparacion = estrategia;
     }
-
-
+    
     
     public override bool sosIgual(Comparable comp)
     {

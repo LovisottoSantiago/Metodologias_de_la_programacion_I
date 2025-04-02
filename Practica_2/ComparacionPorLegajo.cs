@@ -2,7 +2,7 @@ public class ComparacionPorLegajo : EstrategiaDeComparacion
 {
     public bool sosIgual(Comparable alumnoA, Comparable alumnoB)
     {
-        return ((Alumno)alumnoA).getLegajo() == ((Alumno)alumnoB).getLegajo();
+        return ((Alumno)alumnoA).getLegajo().sosIgual(((Alumno)alumnoB).getLegajo());
     }
 
     public bool sosMenor(Comparable alumnoA, Comparable alumnoB)

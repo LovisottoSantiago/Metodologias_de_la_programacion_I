@@ -2,7 +2,7 @@ public class ComparacionPorDNI : EstrategiaDeComparacion
 {
     public bool sosIgual(Comparable alumnoA, Comparable alumnoB)
     {
-        return ((Alumno)alumnoA).getDNI() == ((Alumno)alumnoB).getDNI();
+        return ((Alumno)alumnoA).getDNI().sosIgual(((Alumno)alumnoB).getDNI());
     }
 
     public bool sosMenor(Comparable alumnoA, Comparable alumnoB)
