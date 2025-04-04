@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 class Program 
 {
 
@@ -14,7 +15,7 @@ class Program
         llenarAlumnos(cola);
 
         informar(multiple);
-
+        imprimirElementos(multiple);
 
     }
 
@@ -28,16 +29,14 @@ class Program
         }
     }
 
-public static void informar(Coleccionable coleccionable)
-{
-    Console.WriteLine("Cantidad: " + coleccionable.cuantos().ToString());
-    Console.WriteLine("Se está comparando min y max por el DNI");
-    Console.WriteLine("Mínimo: " + coleccionable.minimo().ToString());
-    Console.WriteLine("Máximo: " + coleccionable.maximo().ToString());
+    public static void informar(Coleccionable coleccionable)
+    {
+        Console.WriteLine("Cantidad: " + coleccionable.cuantos().ToString());
+        Console.WriteLine("Se está comparando min y max por el DNI");
+        Console.WriteLine("Mínimo: " + coleccionable.minimo().ToString());
+        Console.WriteLine("Máximo: " + coleccionable.maximo().ToString());
 
-}
-
-
+    }
 
     public static void llenarAlumnos(Coleccionable coleccionable)
     {
@@ -63,12 +62,19 @@ public static void informar(Coleccionable coleccionable)
         string[] nombres = { "Santiago", "Maria", "Pedro", "Ana", "Luis", "Carla", "Jorge", "Laura", "Carlos", "Sofia" };
         string[] apellidos = { "Lovisotto", "Perez", "Lopez", "Martinez", "Fernandez", "Rodriguez", "Garcia", "Sanchez", "Diaz", "Morales" };
 
-        return $"{nombres[random.Next(0 , nombres.Length)]} {apellidos[random.Next(0, apellidos.Length)]}";
+        return nombres[random.Next(0 , nombres.Length)] + apellidos[random.Next(0, apellidos.Length)];
     }
 
-
-
-
+    public static void imprimirElementos(Coleccionable coleccionable)
+    {
+        Iterador iteradorColeccionable = coleccionable.crearIterador();
+        
+        for (iteradorColeccionable.primero(); !iteradorColeccionable.fin(); iteradorColeccionable.siguiente())
+        {
+            Console.WriteLine(iteradorColeccionable.actual());
+        }
+        
+    }
 
 
 }

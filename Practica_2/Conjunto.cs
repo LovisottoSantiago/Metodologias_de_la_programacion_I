@@ -1,4 +1,4 @@
-public class Conjunto : Coleccionable, Iterable
+public class Conjunto : Coleccionable
 {
     private List<Comparable> elementosComparables;
 

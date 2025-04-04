@@ -84,7 +84,7 @@ class Program
         string[] nombres = { "Santiago", "Maria", "Pedro", "Ana", "Luis", "Carla", "Jorge", "Laura", "Carlos", "Sofia" };
         string[] apellidos = { "Lovisotto", "Perez", "Lopez", "Martinez", "Fernandez", "Rodriguez", "Garcia", "Sanchez", "Diaz", "Morales" };
 
-        return $"{nombres[random.Next(0 , nombres.Length)]} {apellidos[random.Next(0, apellidos.Length)]}";
+        return nombres[random.Next(0 , nombres.Length)] + apellidos[random.Next(0, apellidos.Length)];
     }
 
 

@@ -1,4 +1,4 @@
-public class Pila : Coleccionable, Iterable
+public class Pila : Coleccionable
 {
     private List<Comparable> elementosComparables;
 

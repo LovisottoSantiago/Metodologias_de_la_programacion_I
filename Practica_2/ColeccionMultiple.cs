@@ -66,4 +66,25 @@ public class ColeccionMultiple : Coleccionable
         return this.pila.contiene(comp) || this.cola.contiene(comp);
     }
 
+
+    // Implemento interfaz Iterable
+    public Iterador crearIterador()
+    {
+        List<Comparable> listaMultiple = new List<Comparable>();
+
+        Iterador iterPila = this.pila.crearIterador();
+        for (iterPila.primero(); !iterPila.fin(); iterPila.siguiente())
+        {
+            listaMultiple.Add(iterPila.actual());
+        }
+
+        Iterador iterCola = this.cola.crearIterador();
+        for (iterCola.primero(); !iterCola.fin(); iterCola.siguiente())
+        {
+            listaMultiple.Add(iterCola.actual());
+        }
+
+        return new IteradorListaGeneral(listaMultiple);
+    }
+
 }

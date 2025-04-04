@@ -1,4 +1,4 @@
-public class Cola : Coleccionable, Iterable
+public class Cola : Coleccionable
 {
     private List<Comparable> elementosComparables;
 

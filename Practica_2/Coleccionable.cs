@@ -1,4 +1,4 @@
-public interface Coleccionable 
+public interface Coleccionable : Iterable
 {
 
     int cuantos();
@@ -6,5 +6,6 @@ public interface Coleccionable
     Comparable maximo();
     void agregar(Comparable comp);
     bool contiene(Comparable comp);
+    
 
 }
