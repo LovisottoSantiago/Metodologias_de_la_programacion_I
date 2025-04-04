@@ -6,6 +6,7 @@ namespace Practica_2
 	
 	class Program 
 	{
+		
 		private static Random random = new Random();
 	
 	    public static void Main(string[] args)
