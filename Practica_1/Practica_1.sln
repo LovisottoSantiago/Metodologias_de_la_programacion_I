@@ -1,8 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_1", "Practica_1.csproj", "{57FC5C3C-5958-3ECA-7D7F-7C301499ADEF}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_1", "Practica_1.csproj", "{D67A6FD1-20AE-4663-A113-D4217183AF8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{57FC5C3C-5958-3ECA-7D7F-7C301499ADEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57FC5C3C-5958-3ECA-7D7F-7C301499ADEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57FC5C3C-5958-3ECA-7D7F-7C301499ADEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57FC5C3C-5958-3ECA-7D7F-7C301499ADEF}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FB47DE3D-61CA-4B8B-AE8A-B0AB103838F7}
+		{D67A6FD1-20AE-4663-A113-D4217183AF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67A6FD1-20AE-4663-A113-D4217183AF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67A6FD1-20AE-4663-A113-D4217183AF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67A6FD1-20AE-4663-A113-D4217183AF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal

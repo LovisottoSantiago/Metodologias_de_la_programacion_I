@@ -1,10 +1,17 @@
-public interface Coleccionable 
+﻿using System;
+
+namespace Practica_1
 {
-
-    int cuantos();
-    Comparable minimo();
-    Comparable maximo();
-    void agregar(Comparable comp);
-    bool contiene(Comparable comp);
-
+	
+	public interface Coleccionable 
+	{
+	
+	    int cuantos();
+	    Comparable minimo();
+	    Comparable maximo();
+	    void agregar(Comparable comp);
+	    bool contiene(Comparable comp);
+	
+	}
+	
 }

@@ -1,6 +1,13 @@
-public interface Comparable 
+﻿using System;
+
+namespace Practica_1
 {
-    bool sosIgual(Comparable comp);
-    bool sosMenor(Comparable comp);
-    bool sosMayor(Comparable comp);
+
+	public interface Comparable
+	{
+	    bool sosIgual(Comparable comp);
+	    bool sosMenor(Comparable comp);
+	    bool sosMayor(Comparable comp);
+	}
+
 }
