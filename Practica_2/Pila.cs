@@ -79,7 +79,7 @@ public class Pila : Coleccionable, Iterable
 
     public void agregar(Comparable comp)
     {
-        this.elementosComparables.Add(comp);
+        this.apilar(comp);
     }
     
     public bool contiene(Comparable comp)
@@ -99,7 +99,7 @@ public class Pila : Coleccionable, Iterable
 
     public Iterador crearIterador()
     {
-        return new IteradorDePila(this);
+        return new IteradorListaGeneral(this.elementosComparables);
     }
 
 }

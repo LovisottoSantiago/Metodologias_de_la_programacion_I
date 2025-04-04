@@ -1,10 +1,10 @@
-public class Conjunto : Coleccionable
+public class Conjunto : Coleccionable, Iterable
 {
-    private List<Comparable> elementos;
+    private List<Comparable> elementosComparables;
 
     public Conjunto()
     {
-        this.elementos = new List<Comparable> ();
+        this.elementosComparables = new List<Comparable> ();
     }
 
 
@@ -12,7 +12,7 @@ public class Conjunto : Coleccionable
     {
         if (!pertenece(elemento))
         {
-            elementos.Add(elemento);
+            elementosComparables.Add(elemento);
         }
     }
 
@@ -20,7 +20,7 @@ public class Conjunto : Coleccionable
     {
         for (int i = 0; i < this.cuantos(); i++)
         {
-            if (this.elementos[i].sosIgual(elemento))
+            if (this.elementosComparables[i].sosIgual(elemento))
             {
                 return true;
             }
@@ -32,23 +32,23 @@ public class Conjunto : Coleccionable
     // Implemento Coleccionable
     public int cuantos()
     {
-        return elementos.Count;
+        return elementosComparables.Count;
     }
 
     public Comparable minimo()
     {
-        if (elementos.Count == 0)
+        if (elementosComparables.Count == 0)
         {
             throw new Exception("El conjunto está vacio");
         }
         
-        Comparable minimo = this.elementos[0];
+        Comparable minimo = this.elementosComparables[0];
         
         for (int i = 1; i < this.cuantos(); i++)
         {
-            if (this.elementos[i].sosMenor(minimo))
+            if (this.elementosComparables[i].sosMenor(minimo))
             {
-                minimo = this.elementos[i];
+                minimo = this.elementosComparables[i];
             }
         }
         return minimo;
@@ -56,18 +56,18 @@ public class Conjunto : Coleccionable
 
     public Comparable maximo()
     {
-        if (elementos.Count == 0)
+        if (elementosComparables.Count == 0)
         {
             throw new Exception("El conjunto está vacio");
         }
         
-        Comparable maximo = this.elementos[0];
+        Comparable maximo = this.elementosComparables[0];
 
         for (int i = 1; i < this.cuantos(); i++)
         {
-            if (this.elementos[i].sosMayor(maximo))
+            if (this.elementosComparables[i].sosMayor(maximo))
             {
-                maximo = this.elementos[i];
+                maximo = this.elementosComparables[i];
             }
         }
         return maximo;
@@ -78,5 +78,14 @@ public class Conjunto : Coleccionable
     {
         return pertenece(comp);
     }
+
+
+
+    // Implemento interfaz Iterable
+    public Iterador crearIterador()
+    {
+        return new IteradorListaGeneral(this.elementosComparables);
+    }
+
 
 }

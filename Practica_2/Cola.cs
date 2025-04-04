@@ -1,4 +1,4 @@
-public class Cola : Coleccionable
+public class Cola : Coleccionable, Iterable
 {
     private List<Comparable> elementosComparables;
 
@@ -88,5 +88,13 @@ public class Cola : Coleccionable
         }
         return false;
     }
+
+
+    // Implemento interfaz Iterable
+    public Iterador crearIterador()
+    {
+        return new IteradorListaGeneral(this.elementosComparables);
+    }
+
 
 }
