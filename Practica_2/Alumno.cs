@@ -21,12 +21,11 @@ public class Alumno : Persona
     {
         return this.promedio;
     }
-
+    
     public void setEstrategia (EstrategiaDeComparacion estrategia)
     {
         this.estrategiaDeComparacion = estrategia;
-    }
-    
+    }    
     
     public override bool sosIgual(Comparable comp)
     {

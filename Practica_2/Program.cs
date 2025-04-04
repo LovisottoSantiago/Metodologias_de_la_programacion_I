@@ -5,18 +5,40 @@ class Program
 
     public static void Main(string[] args)
     {
+        
+        Pila pila = new Pila();
+        llenarAlumnos(pila);
+        cambiarEstrategia(pila, new ComparacionPorNombre());
+        Console.WriteLine("Comparando por nombre (alfabeticamente): ");
+        informar(pila);
 
+        cambiarEstrategia(pila, new ComparacionPorLegajo());
+        Console.WriteLine("\nComparando por legajo: ");
+        informar(pila);
+        
+
+        cambiarEstrategia(pila, new ComparacionPorPromedio());
+        Console.WriteLine("\nComparando por promedio: ");
+        informar(pila);
+        
+        cambiarEstrategia(pila, new ComparacionPorDNI());
+        Console.WriteLine("\nComparando por dni: ");
+        informar(pila);
+        
+                
+        /*  Ejercicio 7
         Pila pila = new Pila();
         Cola cola = new Cola();
-
-        ColeccionMultiple multiple = new ColeccionMultiple(pila, cola);
+        Conjunto conjunto = new Conjunto();
 
         llenarAlumnos(pila);
         llenarAlumnos(cola);
+        llenarAlumnos(conjunto);
 
-        informar(multiple);
-        imprimirElementos(multiple);
-
+        imprimirElementos(pila);
+        imprimirElementos(cola);
+        imprimirElementos(conjunto);
+        */
     }
 
     // Funciones
@@ -30,9 +52,8 @@ class Program
     }
 
     public static void informar(Coleccionable coleccionable)
-    {
+    {        
         Console.WriteLine("Cantidad: " + coleccionable.cuantos().ToString());
-        Console.WriteLine("Se está comparando min y max por el DNI");
         Console.WriteLine("Mínimo: " + coleccionable.minimo().ToString());
         Console.WriteLine("Máximo: " + coleccionable.maximo().ToString());
 
@@ -62,7 +83,7 @@ class Program
         string[] nombres = { "Santiago", "Maria", "Pedro", "Ana", "Luis", "Carla", "Jorge", "Laura", "Carlos", "Sofia" };
         string[] apellidos = { "Lovisotto", "Perez", "Lopez", "Martinez", "Fernandez", "Rodriguez", "Garcia", "Sanchez", "Diaz", "Morales" };
 
-        return nombres[random.Next(0 , nombres.Length)] + apellidos[random.Next(0, apellidos.Length)];
+        return nombres[random.Next(0 , nombres.Length)] + " " + apellidos[random.Next(0, apellidos.Length)];
     }
 
     public static void imprimirElementos(Coleccionable coleccionable)
@@ -76,5 +97,15 @@ class Program
         
     }
 
+    public static void cambiarEstrategia(Coleccionable coleccionable, EstrategiaDeComparacion estrategiaDeComparacion)
+    {
+        Iterador iterador = coleccionable.crearIterador();
+        for (iterador.primero(); !iterador.fin(); iterador.siguiente())
+        {
+            Comparable comp = iterador.actual();
+            Alumno alumno = (Alumno)comp;
+            alumno.setEstrategia(estrategiaDeComparacion);
+        }
+    }
 
 }
