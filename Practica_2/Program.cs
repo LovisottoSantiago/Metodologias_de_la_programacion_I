@@ -31,6 +31,7 @@ class Program
 public static void informar(Coleccionable coleccionable)
 {
     Console.WriteLine("Cantidad: " + coleccionable.cuantos().ToString());
+    Console.WriteLine("Se está comparando min y max por el DNI");
     Console.WriteLine("Mínimo: " + coleccionable.minimo().ToString());
     Console.WriteLine("Máximo: " + coleccionable.maximo().ToString());
 
@@ -50,7 +51,7 @@ public static void informar(Coleccionable coleccionable)
             Numero promedio = new Numero(random.Next(1, 11));
 
             Alumno alumno = new Alumno(nombre, dni, legajo, promedio);      
-            alumno.setEstrategia(new ComparacionPorLegajo());
+            alumno.setEstrategia(new ComparacionPorDNI());
             coleccionable.agregar(alumno); 
         }
     }

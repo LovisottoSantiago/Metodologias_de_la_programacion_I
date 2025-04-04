@@ -1,4 +1,4 @@
-public class Pila : Coleccionable
+public class Pila : Coleccionable, Iterable
 {
     private List<Comparable> elementosComparables;
 
@@ -23,6 +23,13 @@ public class Pila : Coleccionable
         this.elementosComparables.RemoveAt(this.elementosComparables.Count - 1);
 
         return comp;
+    }
+
+
+    // Modifico Pila para que implemente Iterable
+    public Comparable getElemento(int indice)
+    {
+        return this.elementosComparables[indice];
     }
 
 
@@ -87,5 +94,12 @@ public class Pila : Coleccionable
         return false;
     }
 
+
+    // Implemento Iterable
+
+    public Iterador crearIterador()
+    {
+        return new IteradorDePila(this);
+    }
 
 }
