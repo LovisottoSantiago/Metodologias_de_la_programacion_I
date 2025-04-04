@@ -1,8 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_2", "Practica_2.csproj", "{568A8571-D623-3BF6-7626-61AE88122099}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_2", "Practica_2.csproj", "{D4AADE8B-DD38-48E6-8074-B73876062016}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{568A8571-D623-3BF6-7626-61AE88122099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{568A8571-D623-3BF6-7626-61AE88122099}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{568A8571-D623-3BF6-7626-61AE88122099}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{568A8571-D623-3BF6-7626-61AE88122099}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A1D58040-C15D-4DC7-A635-E811AD8E39FF}
+		{D4AADE8B-DD38-48E6-8074-B73876062016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4AADE8B-DD38-48E6-8074-B73876062016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4AADE8B-DD38-48E6-8074-B73876062016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4AADE8B-DD38-48E6-8074-B73876062016}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal

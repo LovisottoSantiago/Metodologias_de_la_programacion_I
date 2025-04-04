@@ -1,7 +1,14 @@
-public interface Iterador
+﻿using System;
+
+namespace Practica_2
 {
-    void primero();
-    void siguiente();
-    bool fin();
-    Comparable actual();
+	
+	public interface Iterador
+	{
+	    void primero();
+	    void siguiente();
+	    bool fin();
+	    Comparable actual();
+	}
+	
 }

@@ -1,6 +1,13 @@
-public interface EstrategiaDeComparacion
+﻿using System;
+
+namespace Practica_2
 {
-    bool sosIgual(Comparable A, Comparable B);
-    bool sosMenor(Comparable A, Comparable B);
-    bool sosMayor(Comparable A, Comparable B);
+	
+	public interface EstrategiaDeComparacion
+	{
+	    bool sosIgual(Comparable A, Comparable B);
+	    bool sosMenor(Comparable A, Comparable B);
+	    bool sosMayor(Comparable A, Comparable B);
+	}
+	
 }

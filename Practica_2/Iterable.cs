@@ -1,5 +1,11 @@
-public interface Iterable
+﻿using System;
+
+namespace Practica_2
 {
-    Iterador crearIterador();
-    
+	
+	public interface Iterable
+	{
+	    Iterador crearIterador();	    
+	}
+	
 }
