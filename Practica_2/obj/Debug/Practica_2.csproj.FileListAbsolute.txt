@@ -3,3 +3,8 @@ C:\Users\lovi\Documents\Migrando a sharp develop\Practica_2\bin\Debug\Practica_2
 C:\Users\lovi\Documents\Migrando a sharp develop\Practica_2\bin\Debug\Practica_2.pdb
 C:\Users\lovi\Documents\Migrando a sharp develop\Practica_2\obj\Debug\Practica_2.exe
 C:\Users\lovi\Documents\Migrando a sharp develop\Practica_2\obj\Debug\Practica_2.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_2\bin\Debug\Practica_2.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_2\bin\Debug\Practica_2.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_2\obj\Debug\Practica_2.csprojResolveAssemblyReference.cache
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_2\obj\Debug\Practica_2.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_2\obj\Debug\Practica_2.pdb
