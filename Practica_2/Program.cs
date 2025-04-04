@@ -26,7 +26,7 @@ class Program
         informar(pila);
         
                 
-        /*  Ejercicio 7
+        /*  Ejercicio 7 
         Pila pila = new Pila();
         Cola cola = new Cola();
         Conjunto conjunto = new Conjunto();
