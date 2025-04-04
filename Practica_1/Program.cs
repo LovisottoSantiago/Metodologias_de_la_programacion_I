@@ -4,8 +4,8 @@ namespace Practica_1
 {
 	class Program 
 	{
-		// Random
-		private static Random random = new Random();
+	    // Random
+	    private static Random random = new Random();
 	
 	    public static void Main(string[] args)
 	    {
