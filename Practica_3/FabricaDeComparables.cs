@@ -15,12 +15,16 @@ namespace Practica_3
 			FabricaDeComparables fabrica = null;
 			
 			switch (opcion) {
-				case 1: // ver como crear Numero
+				case 1: 
 					fabrica = new FabricaDeNumero();
 					break;
 					
-				case 2: // ver como crear Alumno
+				case 2:
 					fabrica = new FabricaDeAlumnos();
+					break;
+					
+				case 3:
+					fabrica = new FabricaDeProfesores();
 					break;
 					
 				default:
@@ -37,17 +41,21 @@ namespace Practica_3
 			FabricaDeComparables fabrica = null;
 			
 			switch (opcion) {
-				case 1: // ver como crear Numero
+				case 1: 
 					fabrica = new FabricaDeNumero();
 					break;
 					
-				case 2: // ver como crear Alumno
+				case 2: 
 					fabrica = new FabricaDeAlumnos();
 					break;
 					
-				default:
-					
+				case 3:
+					fabrica = new FabricaDeProfesores();
 					break;
+					
+				default:
+					break;
+					
 			}
 			
 			return fabrica.crearPorTeclado();

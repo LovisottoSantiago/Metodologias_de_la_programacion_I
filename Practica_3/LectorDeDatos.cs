@@ -15,6 +15,12 @@ namespace Practica_3
 			return int.Parse(Console.ReadLine());
 		}
 		
+		public double doublePorTeclado()
+		{
+			Console.Write("Ingrese un numero float: ");
+			return double.Parse(Console.ReadLine());
+		}
+		
 		public string stringPorTeclado()
 		{
 			Console.Write("Ingrese un string: ");

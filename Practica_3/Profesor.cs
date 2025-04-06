@@ -60,7 +60,7 @@ namespace Practica_3
 		
 		public override string ToString()
 	    {
-			return base.ToString() + " Antiguedad: " + this.antiguedad.ToString();
+			return base.ToString() + "- Antiguedad: " + this.antiguedad.ToString();
 	    }
 		
 		// Implemento Observado

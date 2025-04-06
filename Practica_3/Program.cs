@@ -6,16 +6,13 @@ namespace Practica_3
 	
 	class Program 
 	{
-	    // Random
-	    private static Random random = new Random();
-	
+		
 	    public static void Main(string[] args)
-	    {
-	    	// Usar fabrica de profesores (falta eso)
-	    	Profesor profe = new Profesor("Mauro", new Numero(123456), 4);
+	    {	    	
+	    	Profesor profe = (Profesor)new FabricaDeProfesores().crearAleatorio();
 	    	
 	    	Coleccionable col = new Pila();
-	    	llenar(col, 2);	    	
+	    	llenar(col, 2);	    
 	    	
 	    	Iterador iterador = col.crearIterador();
 	    	
@@ -24,7 +21,8 @@ namespace Practica_3
 	    		profe.agregarObservador((Observador)iterador.actual());
 	        }
 	    	
-	    	dictadoDeClase(profe);
+	    	Console.WriteLine("Profesor: " + profe.getNombre());
+	    	dictadoDeClase(profe); 
 	       
 	       Console.ReadKey();
 	    }
@@ -35,6 +33,7 @@ namespace Practica_3
 	        for (int i = 0; i < 20; i++){
 	    		Comparable elemento = FabricaDeComparables.crearAleatorio(opcion);
 	            coleccionable.agregar(elemento);
+	            // Console.WriteLine("Agregado: " + elemento); 
 	        }
 	    }
 	
@@ -48,11 +47,11 @@ namespace Practica_3
 	        
 	        if(coleccionable.contiene(elemento))
 	        {
-	        	Console.WriteLine("Está");
+	        	Console.WriteLine("El elemento leído está en la colección.");
 	        }
 	        else 
 	        {
-	        	Console.WriteLine("No está");
+	        	Console.WriteLine("El elemento leído no está en la colección.");
 	        }
 	
 	    }
@@ -67,14 +66,7 @@ namespace Practica_3
 	        }
 	    	
 	    }
-	
-	    public static String generarNombre() // Esto lo hice para generar nombres reales en vez de Alumno1, Alumno2, etc.
-	    {
-	        string[] nombres = { "Santiago", "Maria", "Pedro", "Ana", "Luis", "Carla", "Jorge", "Laura", "Carlos", "Sofia" };
-	        string[] apellidos = { "Lovisotto", "Perez", "Lopez", "Martinez", "Fernandez", "Rodriguez", "Garcia", "Sanchez", "Diaz", "Morales" };
-	
-	        return nombres[random.Next(0 , nombres.Length)] + " " + apellidos[random.Next(0, apellidos.Length)];
-	    }
+	    
 	
 	    public static void imprimirElementos(Coleccionable coleccionable)
 	    {
@@ -102,7 +94,9 @@ namespace Practica_3
 	    {
 	    	for (int i= 0; i < 5; i++)
 	    	{
+	    		Console.WriteLine("");
 	    		profe.hablarEnClase();
+	    		Console.WriteLine("");
 	    		profe.escribirEnElPizarron();
 	    	}
 	    }

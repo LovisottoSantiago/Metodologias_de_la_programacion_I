@@ -59,6 +59,7 @@
     <Compile Include="FabricaDeAlumnos.cs" />
     <Compile Include="FabricaDeComparables.cs" />
     <Compile Include="FabricaDeNumero.cs" />
+    <Compile Include="FabricaDeProfesores.cs" />
     <Compile Include="GeneradorDeDatosAleatorios.cs" />
     <Compile Include="Iterable.cs" />
     <Compile Include="Iterador.cs" />

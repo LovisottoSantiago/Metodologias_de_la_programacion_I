@@ -7,7 +7,7 @@ namespace Practica_3
 	public class GeneradorDeDatosAleatorios
 	{
 		
-		Random random = new Random();
+		private static Random random = new Random();
 		
 		public GeneradorDeDatosAleatorios()
 		{
@@ -17,12 +17,17 @@ namespace Practica_3
 		
 		public int numeroAleatorio(int max)
 		{
-			return this.random.Next(0, max);
+			return random.Next(0, max);
+		}
+		
+		public double doubleAleatorio(double max)
+		{
+			return Math.Round(random.NextDouble() * max, 1);
 		}
 		
 		public string stringAleatorio(int cant=5)
 		{
-			const string alfabeto = "abcdefghijklmnopqrstuvwxyz1234567890";
+			const string alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 			StringBuilder token = new StringBuilder();
 			
 			for (int i = 0; i < cant; i++)

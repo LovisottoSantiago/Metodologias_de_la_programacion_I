@@ -6,11 +6,11 @@ namespace Practica_3
 	public class Alumno : Persona, Observador
 	{
 	    private Numero legajo;
-	    private Numero promedio;
+	    private double promedio;
 	
 	    private EstrategiaDeComparacion estrategiaDeComparacion;
 	
-	    public Alumno(string nombre, Numero dni, Numero legajo, Numero promedio) : base(nombre, dni)
+	    public Alumno(string nombre, Numero dni, Numero legajo, double promedio) : base(nombre, dni)
 	    {
 	        this.legajo = legajo;
 	        this.promedio = promedio;
@@ -22,7 +22,7 @@ namespace Practica_3
 	        return this.legajo;
 	    }
 	
-	    public Numero getPromedio()
+	    public double getPromedio()
 	    {
 	        return this.promedio;
 	    }
@@ -56,15 +56,15 @@ namespace Practica_3
 	    // Para patron Observer	    
 	    public void prestarAtencion()
 	    {
-	    	Console.WriteLine("Prestando atencion.");
+	    	Console.WriteLine("Alumno:" + this.nombre + ", prestando atencion.");
 	    }
 	    
 	    
 	    public void distraerse()
 	    {
 	    	Random rdn = new Random();
-	    		string[] frases = new String[] {"Mirando el celular", "Dibujando en el margen de la carpeta", "Tirando aviones de papel"};
-	    	Console.WriteLine(frases[rdn.Next(0, 2)]);
+	    	string[] frases = new String[] {"Mirando el celular.", "Dibujando en el margen de la carpeta.", "Tirando aviones de papel."};
+	    	Console.WriteLine("Alumno: " + this.nombre + ", "  + frases[rdn.Next(0, 2)]);
 	    }
 	    
 	    
