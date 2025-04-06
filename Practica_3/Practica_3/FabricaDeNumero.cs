@@ -10,7 +10,7 @@ namespace Practica_3
 		// Implemento metodos abstractos
 		public override Comparable crearAleatorio()
 		{
-			return new Numero(gen.numeroAleatorio(1000);
+			return new Numero(gen.numeroAleatorio(1000));
 		}
 		
 		

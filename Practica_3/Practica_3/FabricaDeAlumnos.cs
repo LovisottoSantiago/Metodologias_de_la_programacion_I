@@ -10,13 +10,13 @@ namespace Practica_3
 		// Implemento metodos abstractos
 		public override Comparable crearAleatorio()
 		{
-			return new Alumno(gen.stringAleatorio(), gen.numeroAleatorio(10000000), gen.numeroAleatorio(10000), (double)(gen.numeroAleatorio(10)));
+			return new Alumno(gen.stringAleatorio(), new Numero(gen.numeroAleatorio(10000000)), new Numero(gen.numeroAleatorio(10000)), new Numero(gen.numeroAleatorio(10)));
 		}
 		
 		
 		public override Comparable crearPorTeclado()
 		{
-			return new Alumno(lector.stringPorTeclado(), lector.numeroPorTeclado(), lector.numeroPorTeclado(), (double)(lector.numeroPorTeclado()));
+			return new Alumno(lector.stringPorTeclado(), new Numero(lector.numeroPorTeclado()), new Numero(lector.numeroPorTeclado()), new Numero(lector.numeroPorTeclado()));
 		}
 		
 	}

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Practica_3
 {
@@ -27,7 +28,7 @@ namespace Practica_3
 			for (int i = 0; i < cant; i++)
 			{
 				int indice = random.Next(alfabeto.Length);
-				token.append(alfabeto[indice]);
+				token.Append(alfabeto[indice]);
 			}
 			
 			return token.ToString();

@@ -3,7 +3,7 @@
 namespace Practica_3
 	
 {
-	public class Alumno : Persona
+	public class Alumno : Persona, Observador
 	{
 	    private Numero legajo;
 	    private Numero promedio;
@@ -51,6 +51,36 @@ namespace Practica_3
 	    {
 	        return base.ToString() + " - Legajo: " + legajo.ToString() + " - Promedio: " + promedio.ToString();
 	    }
+	    
+	    
+	    // Para patron Observer	    
+	    public void prestarAtencion()
+	    {
+	    	Console.WriteLine("Prestando atencion.");
+	    }
+	    
+	    
+	    public void distraerse()
+	    {
+	    	Random rdn = new Random();
+	    		string[] frases = new String[] {"Mirando el celular", "Dibujando en el margen de la carpeta", "Tirando aviones de papel"};
+	    	Console.WriteLine(frases[rdn.Next(0, 2)]);
+	    }
+	    
+	    
+	    // Implemento Observador
+	    public void actualizar(Observado o)
+	    {
+	    	if(((Profesor)o).isHablando()) // Si esta hablando
+	    	{
+	    		this.prestarAtencion();
+	    	}
+	    	else
+	    	{
+	    		this.distraerse();
+	    	}
+	    }
+	    
 	}
 
 }

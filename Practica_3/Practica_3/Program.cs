@@ -11,9 +11,20 @@ namespace Practica_3
 	
 	    public static void Main(string[] args)
 	    {
-	    	Pila p = new Pila();
-	    	llenar(p, 2);
-	    	informar(Pila, 2);
+	    	// Usar fabrica de profesores (falta eso)
+	    	Profesor profe = new Profesor("Mauro", new Numero(123456), 4);
+	    	
+	    	Coleccionable col = new Pila();
+	    	llenar(col, 2);	    	
+	    	
+	    	Iterador iterador = col.crearIterador();
+	    	
+	    	for (iterador.primero(); !iterador.fin(); iterador.siguiente())
+	        {
+	    		profe.agregarObservador((Observador)iterador.actual());
+	        }
+	    	
+	    	dictadoDeClase(profe);
 	       
 	       Console.ReadKey();
 	    }
@@ -51,7 +62,7 @@ namespace Practica_3
 	        
 	    	for(int i = 0; i < 20; i++)
 	        {
-	    		Comparable elemento = FabricaDeComparables(2); // (2) Para crear Alumnos
+	    		Comparable elemento = FabricaDeComparables.crearAleatorio(2); // (2) Para crear Alumnos
 	    		coleccionable.agregar(elemento);
 	        }
 	    	
@@ -85,6 +96,15 @@ namespace Practica_3
 	            Alumno alumno = (Alumno)comp;
 	            alumno.setEstrategia(estrategiaDeComparacion);
 	        }
+	    }
+	    
+	    public static void dictadoDeClase(Profesor profe)
+	    {
+	    	for (int i= 0; i < 5; i++)
+	    	{
+	    		profe.hablarEnClase();
+	    		profe.escribirEnElPizarron();
+	    	}
 	    }
 	
 	}	
