@@ -3,3 +3,8 @@ C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\Prac
 C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\Practica_3\bin\Debug\Practica_3.pdb
 C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\Practica_3\obj\Debug\Practica_3.exe
 C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\Practica_3\obj\Debug\Practica_3.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\obj\Debug\Practica_3.csprojResolveAssemblyReference.cache
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\obj\Debug\Practica_3.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\bin\Debug\Practica_3.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\bin\Debug\Practica_3.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_3\obj\Debug\Practica_3.pdb

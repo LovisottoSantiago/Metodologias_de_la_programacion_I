@@ -9,6 +9,7 @@ namespace Practica_3
 		
 	    public static void Main(string[] args)
 	    {	    	
+	    	/* Ejercicio 14 */
 	    	Profesor profe = (Profesor)new FabricaDeProfesores().crearAleatorio();
 	    	
 	    	Coleccionable col = new Pila();
@@ -22,8 +23,25 @@ namespace Practica_3
 	        }
 	    	
 	    	Console.WriteLine("Profesor: " + profe.getNombre());
-	    	dictadoDeClase(profe); 
-	       
+	    	dictadoDeClase(profe); 	    	
+	    	
+	    	
+	    	
+	    	/* Ejercicio 6 	    	
+	    	Coleccionable col = new Pila();
+	    	llenar(col, 1);
+	    	informar(col, 1);
+	    	imprimirElementos(col);
+	    	*/
+	    	
+	    	/* Ejercicio 9
+	    	Profesor profe = (Profesor)new FabricaDeProfesores().crearAleatorio();	    	
+	    	Coleccionable col = new Pila();
+	    	llenar(col, 3);	
+	    	informar(col, 3);
+	    	imprimirElementos(col);
+	       	*/
+	       	
 	       Console.ReadKey();
 	    }
 	
@@ -33,7 +51,7 @@ namespace Practica_3
 	        for (int i = 0; i < 20; i++){
 	    		Comparable elemento = FabricaDeComparables.crearAleatorio(opcion);
 	            coleccionable.agregar(elemento);
-	            // Console.WriteLine("Agregado: " + elemento); 
+	            //Console.WriteLine("Agregado: " + elemento); 
 	        }
 	    }
 	
