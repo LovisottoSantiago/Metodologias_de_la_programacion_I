@@ -39,5 +39,18 @@ namespace Practica_4
 			return token.ToString();
 		}
 		
+		
+		// Nuevo metodo para generar nombres aleatorios (mas completo)
+		public string nombreAleatorio()
+        {
+            string[] nombres = { "Santiago", "Maria", "Pedro", "Ana", "Luis", "Laura", "Carlos", "Sofia", "Javier", "Isabel" };
+            string[] apellidos = { "Lovisotto", "Lopez", "Martinez", "Hernandez", "Garcia", "Perez", "Sanchez", "Ramirez", "Torres", "Diaz" };
+
+            string nombre = nombres[numeroAleatorio(nombres.Length)];
+            string apellido = apellidos[numeroAleatorio(apellidos.Length)];
+            
+            return nombre + " " + apellido;
+        }
+		
 	}
 }

@@ -3,3 +3,8 @@ C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\Prac
 C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\Practica_4\obj\Debug\Practica_4.csprojResolveAssemblyReference.cache
 C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\Practica_4\obj\Debug\Practica_4.exe
 C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\Practica_4\obj\Debug\Practica_4.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\obj\Debug\Practica_4.csprojResolveAssemblyReference.cache
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\obj\Debug\Practica_4.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\bin\Debug\Practica_4.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\bin\Debug\Practica_4.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_4\obj\Debug\Practica_4.pdb

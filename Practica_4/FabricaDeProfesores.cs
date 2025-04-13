@@ -10,7 +10,7 @@ namespace Practica_4
 		// Implemento metodos abstractos
 		public override Comparable crearAleatorio()
 		{
-			return new Profesor(gen.stringAleatorio(), new Numero(gen.numeroAleatorio(10000000)), gen.numeroAleatorio(35));
+			return new Profesor(gen.nombreAleatorio(), new Numero(gen.numeroAleatorio(10000000)), gen.numeroAleatorio(35));
 		}
 		
 		

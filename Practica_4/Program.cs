@@ -8,8 +8,10 @@ namespace Practica_4
 		{
 			Console.WriteLine("Hello World!");
 			
+			FabricaDeAlumnos fabricaDeAlumnos = new FabricaDeAlumnos();
+			Alumno a = (Alumno)fabricaDeAlumnos.crearAleatorio();
 			
-			
+			Console.WriteLine(a.mostrarCalificacion());
 			
 			
 			

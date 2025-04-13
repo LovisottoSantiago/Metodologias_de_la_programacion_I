@@ -50,6 +50,7 @@
     <Compile Include="Coleccionable.cs" />
     <Compile Include="ColeccionMultiple.cs" />
     <Compile Include="Comparable.cs" />
+    <Compile Include="ComparacionPorCalificacion.cs" />
     <Compile Include="ComparacionPorDNI.cs" />
     <Compile Include="ComparacionPorLegajo.cs" />
     <Compile Include="ComparacionPorNombre.cs" />
