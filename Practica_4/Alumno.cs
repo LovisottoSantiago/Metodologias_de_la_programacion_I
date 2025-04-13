@@ -7,12 +7,12 @@ namespace Practica_4
 	{
 	    private Numero legajo;
 	    private double promedio;
-	    private Numero calificacion;
+	    private int calificacion;
 	    private Random rdn = new Random();
 	
 	    private EstrategiaDeComparacion estrategiaDeComparacion;
 	
-	    public Alumno(string nombre, Numero dni, Numero legajo, double promedio, Numero calificacion) : base(nombre, dni)
+	    public Alumno(string nombre, Numero dni, Numero legajo, double promedio, int calificacion) : base(nombre, dni)
 	    {
 	        this.legajo = legajo;
 	        this.promedio = promedio;
@@ -30,12 +30,12 @@ namespace Practica_4
 	        return this.promedio;
 	    }
 	    
-	    public Numero getCalificacion()
+	    public int getCalificacion()
 	    {
 	    	return this.calificacion;
 	    }
 	    
-	    public void setCalificacion(Numero calificacion)
+	    public void setCalificacion(int calificacion)
 	    {
 	    	this.calificacion = calificacion;
 	    }
@@ -92,7 +92,7 @@ namespace Practica_4
 	    }
 	    
 	    
-	    public int responderPregunta(int pregunta)
+	    public virtual int responderPregunta(int pregunta)
 	    {
 	    	return rdn.Next(1, 3);
 	    }
