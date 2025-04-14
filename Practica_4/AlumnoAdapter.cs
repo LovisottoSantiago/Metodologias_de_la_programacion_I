@@ -6,9 +6,9 @@ namespace Practica_4
 
 	public class AlumnoAdapter : Student
 	{
-		protected Alumno alumno;
+		protected IAlumno alumno;
 		
-		public AlumnoAdapter(Alumno alumno)
+		public AlumnoAdapter(IAlumno alumno)
 		{
 			this.alumno = alumno;
 		}
@@ -20,7 +20,7 @@ namespace Practica_4
 			return alumno.getNombre();
 		}
 		
-		public Alumno getAlumno()
+		public IAlumno getAlumno()
 		{
 			return this.alumno;
 		}
@@ -42,19 +42,19 @@ namespace Practica_4
 		
 		public bool equals(Student student)
 		{
-			Alumno stu = ((AlumnoAdapter)student).getAlumno();
+			Comparable stu = ((AlumnoAdapter)student).getAlumno();
 			return alumno.sosIgual(stu);
 		}
 		
 		public bool lessThan(Student student)
 		{
-			Alumno stu = ((AlumnoAdapter)student).getAlumno();
+			Comparable stu = ((AlumnoAdapter)student).getAlumno();
 			return alumno.sosMenor(stu);
 		}
 		
 		public bool greaterThan(Student student)
 		{
-			Alumno stu = ((AlumnoAdapter)student).getAlumno();
+			Comparable stu = ((AlumnoAdapter)student).getAlumno();
 			return alumno.sosMayor(stu);
 		}
 		

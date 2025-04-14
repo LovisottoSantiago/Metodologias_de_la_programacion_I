@@ -5,19 +5,19 @@ namespace Practica_4
 
 	public class ComparacionPorPromedio : EstrategiaDeComparacion
 	{
-	    public bool sosIgual(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosIgual(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getPromedio() == ((Alumno)alumnoB).getPromedio();
+	    	return alumnoA.getPromedio() == alumnoB.getPromedio();
 	    }
 	
-	    public bool sosMenor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMenor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getPromedio() < ((Alumno)alumnoB).getPromedio();
+	    	return alumnoA.getPromedio() < alumnoB.getPromedio();
 	    }
 	
-	    public bool sosMayor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMayor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getPromedio() > ((Alumno)alumnoB).getPromedio();
+	    	return alumnoA.getPromedio() > alumnoB.getPromedio();
 	    }
 	
 	}

@@ -5,19 +5,19 @@ namespace Practica_4
 			
 	public class ComparacionPorDNI : EstrategiaDeComparacion
 	{
-	    public bool sosIgual(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosIgual(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getDNI().sosIgual(((Alumno)alumnoB).getDNI());
+	    	return alumnoA.getDNI().sosIgual(alumnoB.getDNI());
 	    }
 	
-	    public bool sosMenor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMenor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getDNI().sosMenor(((Alumno)alumnoB).getDNI());
+	    	return alumnoA.getDNI().sosMenor(alumnoB.getDNI());
 	    }
 	
-	    public bool sosMayor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMayor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getDNI().sosMayor(((Alumno)alumnoB).getDNI());
+	    	return alumnoA.getDNI().sosMayor(alumnoB.getDNI());
 	    }
 	
 	}

@@ -3,12 +3,12 @@
 namespace Practica_4
 	
 {
-	public class Alumno : Persona, Observador
+	public class Alumno : Persona, Observador, IAlumno
 	{
 	    private Numero legajo;
 	    private double promedio;
 	    private int calificacion;
-	    private Random rdn = new Random();
+	    private Random rdn;
 	
 	    private EstrategiaDeComparacion estrategiaDeComparacion;
 	
@@ -18,6 +18,7 @@ namespace Practica_4
 	        this.promedio = promedio;
 	        this.estrategiaDeComparacion = new ComparacionPorLegajo();
 	        this.calificacion = calificacion;
+	        this.rdn = new Random();
 	    }
 	
 	    public Numero getLegajo()
@@ -29,6 +30,7 @@ namespace Practica_4
 	    {
 	        return this.promedio;
 	    }
+
 	    
 	    public int getCalificacion()
 	    {
@@ -47,17 +49,25 @@ namespace Practica_4
 	    
 	    public override bool sosIgual(Comparable comp)
 	    {
-	        return this.estrategiaDeComparacion.sosIgual(this, (Alumno)comp);  
+	    	IAlumno alu = (IAlumno)comp;
+	        return this.estrategiaDeComparacion.sosIgual(this, alu);  
 	    }
 	
 	    public override bool sosMenor(Comparable comp)
 	    {
-	        return this.estrategiaDeComparacion.sosMenor(this, (Alumno)comp);
+	    	IAlumno alu = (IAlumno)comp;
+	        return this.estrategiaDeComparacion.sosMenor(this, alu); 
 	    }
 	
 	    public override bool sosMayor(Comparable comp)
 	    {
-	        return this.estrategiaDeComparacion.sosMayor(this, (Alumno)comp);
+	    	IAlumno alu = (IAlumno)comp;
+	        return this.estrategiaDeComparacion.sosMayor(this, alu); 
+	    }
+	    
+	    public EstrategiaDeComparacion getEstrategia()
+	    {
+	    	return this.estrategiaDeComparacion;
 	    }
 	
 	    public override string ToString()
@@ -94,13 +104,14 @@ namespace Practica_4
 	    
 	    public virtual int responderPregunta(int pregunta)
 	    {
-	    	return rdn.Next(1, 3);
+	    	GeneradorDeDatosAleatorios gen = new GeneradorDeDatosAleatorios();
+	    	return gen.numeroAleatorio(3);
 	    }
 	    
 	    
 	    public string mostrarCalificacion()
 	    {
-	    	return this.nombre + "\t" + this.calificacion;
+	    	return this.nombre + ", " + this.calificacion;
 	    }
 	    
 	    

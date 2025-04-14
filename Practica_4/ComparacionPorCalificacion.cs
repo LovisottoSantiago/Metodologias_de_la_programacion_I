@@ -5,19 +5,19 @@ namespace Practica_4
 
 	public class ComparacionPorCalificacion : EstrategiaDeComparacion
 	{
-	    public bool sosIgual(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosIgual(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getCalificacion() == (((Alumno)alumnoB).getCalificacion());
+	    	return alumnoA.getCalificacion() == alumnoB.getCalificacion();
 	    }
 	
-	    public bool sosMenor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMenor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getCalificacion() < (((Alumno)alumnoB).getCalificacion());
+	    	return alumnoA.getCalificacion() < alumnoB.getCalificacion();
 	    }
 	
-	    public bool sosMayor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMayor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getCalificacion() > (((Alumno)alumnoB).getCalificacion());
+	    	return alumnoA.getCalificacion() > alumnoB.getCalificacion();
 	    }
 	
 	}

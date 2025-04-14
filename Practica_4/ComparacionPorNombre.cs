@@ -5,24 +5,24 @@ namespace Practica_4
 
 	public class ComparacionPorNombre : EstrategiaDeComparacion
 	{
-	    public bool sosIgual(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosIgual(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        return ((Alumno)alumnoA).getNombre() == ((Alumno)alumnoB).getNombre();
+	    	return alumnoA.getNombre() == alumnoB.getNombre();
 	    }
 	
-	    public bool sosMenor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMenor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        String nombreA = ((Alumno)alumnoA).getNombre();
-	        String nombreB = ((Alumno)alumnoB).getNombre();
+	        String nombreA = ((IAlumno)alumnoA).getNombre();
+	        String nombreB = ((IAlumno)alumnoB).getNombre();
 	        return nombreA.CompareTo(nombreB) < 0; 
 	        // Si nombreA es menor que nombreB, devuelve un numero negativo.
 	        // Si son iguales devuelve cero. Si es mayor devuelve positivo.
 	    }
 	
-	    public bool sosMayor(Comparable alumnoA, Comparable alumnoB)
+	    public bool sosMayor(IAlumno alumnoA, IAlumno alumnoB)
 	    {
-	        String nombreA = ((Alumno)alumnoA).getNombre();
-	        String nombreB = ((Alumno)alumnoB).getNombre();
+	        String nombreA = ((IAlumno)alumnoA).getNombre();
+	        String nombreB = ((IAlumno)alumnoB).getNombre();
 	        return nombreA.CompareTo(nombreB) > 0; 
 	    }
 	
