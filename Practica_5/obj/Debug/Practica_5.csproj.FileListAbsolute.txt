@@ -1,0 +1,5 @@
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_5\bin\Debug\Practica_5.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_5\bin\Debug\Practica_5.pdb
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_5\obj\Debug\Practica_5.csprojResolveAssemblyReference.cache
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_5\obj\Debug\Practica_5.exe
+C:\Users\lovi\Documents\Github\Metodologias_de_la_programacion_I\Practica_5\obj\Debug\Practica_5.pdb
