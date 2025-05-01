@@ -5,9 +5,11 @@ namespace Practica_5
 	
 {
 
-	public class Cola : Coleccionable
+	public class Cola : Coleccionable, Iterable, Ordenable
 	{
 	    private List<Comparable> elementosComparables;
+	    private OrdenEnAula1 ordenInicio, ordenAulaLlena;
+	    private OrdenEnAula2 ordenLlegaAlumno;
 	
 	    public Cola()
 	    {
@@ -17,6 +19,20 @@ namespace Practica_5
 	    public void encolar(Comparable comp)
 	    {
 	        this.elementosComparables.Add(comp);
+	        
+	        
+	        if (this.elementosComparables.Count == 1 && ordenInicio != null)
+	        {
+	        	ordenInicio.ejecutar();
+	        }
+	        
+	        ordenLlegaAlumno.ejecutar(comp);
+	        
+	        if (this.elementosComparables.Count == 40)
+	        {
+	        	ordenAulaLlena.ejecutar();
+	        }
+	        
 	    }
 	
 	    public Comparable desencolar()
@@ -102,6 +118,23 @@ namespace Practica_5
 	    {
 	        return new IteradorListaGeneral(this.elementosComparables);
 	    }
+	    
+	    
+	    // Implemento Iterable
+	    public void setOrdenInicio(OrdenEnAula1 o)
+	    {
+	    	this.ordenInicio = o;
+	    }
+	    
+		public void setOrdenLlegaAlumno(OrdenEnAula2 o)
+		{
+			this.ordenLlegaAlumno = o;
+		}
+		
+		public void setOrdenAulaLlena(OrdenEnAula1 o)
+		{
+			this.ordenAulaLlena = o;
+		}
 	    
 	
 	}	

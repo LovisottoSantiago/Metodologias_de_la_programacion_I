@@ -7,11 +7,14 @@ namespace Practica_5
 	{
 		
 		private Alumno alumnoReal;
-		private string nombreProxy;
 		
-		public AlumnoProxy(string nombre)
+		private string nombreProxy;
+		private int opcion;
+		
+		public AlumnoProxy(string nombre, int opcion)
 		{
 			this.nombreProxy = nombre;
+			this.opcion = opcion;
 		}
 		
 		// Implemento interface IAlumno
@@ -19,7 +22,7 @@ namespace Practica_5
 		// Lo que puede resolver
 		public string getNombre()
 		{
-			return this.nombreProxy;
+			return "Soy proxy: " + this.nombreProxy;
 		}
 		
 		
@@ -28,7 +31,7 @@ namespace Practica_5
 		{
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.getLegajo();
@@ -38,7 +41,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.getDNI();	    	
@@ -48,7 +51,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.getPromedio();
@@ -58,7 +61,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.getCalificacion();	    	
@@ -68,27 +71,27 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
-			return alumnoReal.setCalificacion(calificacion);	    	
+			alumnoReal.setCalificacion(calificacion);	    	
 	    }
 	    
-	    public void setEstrategia (EstrategiaDeComparacion estrategia);  
+	    public void setEstrategia (EstrategiaDeComparacion estrategia)  
 	    {
 	    	if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
-	    	return alumnoReal.setEstrategia(estrategia);
+	    	alumnoReal.setEstrategia(estrategia);
 	    }
 	    
 	    public EstrategiaDeComparacion getEstrategia()
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.getEstrategia();	    	
@@ -98,37 +101,39 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
-			return alumnoReal.prestarAtencion();	    	
+			alumnoReal.prestarAtencion();	    	
 	    }
 	    	    
 	    public void distraerse()
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
-			return alumnoReal.distraerse();	    	
+			alumnoReal.distraerse();	    	
 	    }
 	    	    
 	    public void actualizar(Observado o)
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
-			return alumnoReal.actualizar();	    	
+			alumnoReal.actualizar(o);	    	
 	    }
 	    	  
 	    public int responderPregunta(int pregunta)
 	    {
 	    	if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
+	    		Console.WriteLine("Acá se creó el alumno Real");
+	    		alumnoReal.setNombre(this.nombreProxy);
 	    	}
 
 	    	return alumnoReal.responderPregunta(pregunta);
@@ -138,7 +143,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.mostrarCalificacion();	    	
@@ -148,7 +153,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.sosIgual(comp);	   	    	
@@ -158,7 +163,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.sosMenor(comp);	   	    	
@@ -168,7 +173,7 @@ namespace Practica_5
 	    {
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.sosMayor(comp);	   	    	

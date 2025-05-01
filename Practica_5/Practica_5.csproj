@@ -50,6 +50,7 @@
     <Compile Include="AlumnoDecorator.cs" />
     <Compile Include="AlumnoMuyEstudioso.cs" />
     <Compile Include="AlumnoProxy.cs" />
+    <Compile Include="Aula.cs" />
     <Compile Include="Cola.cs" />
     <Compile Include="Coleccionable.cs" />
     <Compile Include="ColeccionMultiple.cs" />
@@ -66,7 +67,9 @@
     <Compile Include="DecoratorAsteriscos.cs" />
     <Compile Include="EstrategiaDeComparacion.cs" />
     <Compile Include="FabricaAlumnosMuyEstudiosos.cs" />
+    <Compile Include="FabricaAlumnosMuyEstudiososDecorados.cs" />
     <Compile Include="FabricaDeAlumnos.cs" />
+    <Compile Include="FabricaDeAlumnosDecorados.cs" />
     <Compile Include="FabricaDeComparables.cs" />
     <Compile Include="FabricaDeNumero.cs" />
     <Compile Include="FabricaDeProfesores.cs" />
@@ -80,6 +83,12 @@
     <Compile Include="Numero.cs" />
     <Compile Include="Observado.cs" />
     <Compile Include="Observador.cs" />
+    <Compile Include="Ordenable.cs" />
+    <Compile Include="OrdenAulaLlena.cs" />
+    <Compile Include="OrdenEnAula1.cs" />
+    <Compile Include="OrdenEnAula2.cs" />
+    <Compile Include="OrdenInicio.cs" />
+    <Compile Include="OrdenLlegaAlumno.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Pila.cs" />
     <Compile Include="Profesor.cs" />

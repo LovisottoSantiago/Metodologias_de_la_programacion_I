@@ -35,6 +35,11 @@ namespace Practica_5
 	    public int getCalificacion()
 	    {
 	    	return this.calificacion;
+	    }	    
+	    
+	    public void setNombre(string nombre)
+	    {
+	    	this.nombre = nombre;
 	    }
 	    
 	    public void setCalificacion(int calificacion)
