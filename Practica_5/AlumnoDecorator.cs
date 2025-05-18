@@ -37,6 +37,10 @@ namespace Practica_5
 	    	return this.alumnoAdicional.sosMayor(comp);
 	    }
 				
+	    public void setNombre(String nombre)
+	    {
+	    	this.alumnoAdicional.setNombre(nombre);
+	    }
 		
 		public Numero getLegajo()
 		{

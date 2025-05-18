@@ -70,6 +70,8 @@
     <Compile Include="FabricaAlumnosMuyEstudiososDecorados.cs" />
     <Compile Include="FabricaDeAlumnos.cs" />
     <Compile Include="FabricaDeAlumnosDecorados.cs" />
+    <Compile Include="FabricaDeAlumnosMuyEstudiososProxy.cs" />
+    <Compile Include="FabricaDeAlumnosProxy.cs" />
     <Compile Include="FabricaDeComparables.cs" />
     <Compile Include="FabricaDeNumero.cs" />
     <Compile Include="FabricaDeProfesores.cs" />

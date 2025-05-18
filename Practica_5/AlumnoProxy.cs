@@ -6,7 +6,7 @@ namespace Practica_5
 	public class AlumnoProxy : IAlumno
 	{
 		
-		private Alumno alumnoReal;
+		private IAlumno alumnoReal;
 		
 		private string nombreProxy;
 		private int opcion;
@@ -31,7 +31,7 @@ namespace Practica_5
 		{
 			if (this.alumnoReal == null)
 	    	{
-	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
+	    		alumnoReal = (IAlumno)FabricaDeComparables.crearAleatorio(opcion);
 	    	}
 
 			return alumnoReal.getLegajo();
@@ -75,6 +75,16 @@ namespace Practica_5
 	    	}
 
 			alumnoReal.setCalificacion(calificacion);	    	
+	    }
+	    
+	    public void setNombre(String nombre)
+	    {
+	    	if (this.alumnoReal == null)
+	    	{
+	    		alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(opcion);
+	    	}
+
+			alumnoReal.setNombre(nombre);	
 	    }
 	    
 	    public void setEstrategia (EstrategiaDeComparacion estrategia)  

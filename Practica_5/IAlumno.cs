@@ -18,6 +18,8 @@ namespace Practica_5
 	    
 	    void setCalificacion(int calificacion);
 	    
+	    void setNombre(String nombre);
+	    
 	    void setEstrategia (EstrategiaDeComparacion estrategia);  	
 	    
 	    EstrategiaDeComparacion getEstrategia();
