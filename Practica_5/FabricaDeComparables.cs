@@ -85,7 +85,16 @@ namespace Practica_5
 					fabrica = new FabricaAlumnosMuyEstudiososDecorados();
 					break;						
 					
+				case 7:
+					fabrica = new FabricaDeAlumnosProxy(); // Decorados
+					break;
+
+				case 8:
+					fabrica = new FabricaDeAlumnosMuyEstudiososProxy(); // Decorados
+					break;					
+					
 				default:
+					
 					break;
 					
 			}
